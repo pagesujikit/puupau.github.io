@@ -107,37 +107,37 @@
     {
       roomNumber: 1,
       title: 'Deluxe Double Room With Balcony',
-      image: '../images/core/room/1/IMG_2250.png',
+      image: 'images/core/room/1/IMG_2250.png',
       description: 'Room Size: 25 square meters'
     },
     {
       roomNumber: 2,
       title: `Superior King`,
-      image: '../images/core/room/2/IMG_2250.png',
+      image: 'images/core/room/2/IMG_2250.png',
       description: 'Room Size: 25 square meters'
     },
     {
       roomNumber: 3,
       title: 'Double room with balcony',
-      image: '../images/core/room/3/IMG_2304.png',
+      image: 'images/core/room/3/IMG_2304.png',
       description: 'Room Size: 20 square meters'
     },
     {
       roomNumber: 5,
       title: 'Superior Double Room',
-      image: '../images/core/room/5/IMG_2302.png',
+      image: 'images/core/room/5/IMG_2302.png',
       description: 'Room Size: 20 square meters'
     },
     {
       roomNumber: 6,
       title: 'Small Double Room',
-      image: '../images/core/room/6/IMG_2337.png',
+      image: 'images/core/room/6/IMG_2337.png',
       description: 'Room Size: 16 square meters'
     },
     {
       roomNumber: 7,
       title: 'Standard Queen Room',
-      image: '../images/core/room/7/IMG_2302.png',
+      image: 'images/core/room/7/IMG_2302.png',
       description: 'Room Size: 20 square meters'
     }
   ];
@@ -226,28 +226,28 @@
 
   let ourGalleryData = [
     {
-      image: '../images/core/gallery/IMG_3330.png'
+      image: 'images/core/gallery/IMG_3330.png'
     },
     {
-      image: '../images/core/gallery/IMG_2197.png'
+      image: 'images/core/gallery/IMG_2197.png'
     },
     {
-      image: '../images/core/gallery/IMG_2359.png'
+      image: 'images/core/gallery/IMG_2359.png'
     },
     {
-      image: '../images/core/gallery/IMG_2257.png'
+      image: 'images/core/gallery/IMG_2257.png'
     },
     {
-      image: '../images/core/gallery/IMG_2307.png'
+      image: 'images/core/gallery/IMG_2307.png'
     },
     {
-      image: '../images/core/gallery/IMG_2314.png'
+      image: 'images/core/gallery/IMG_2314.png'
     },
     {
-      image: '../images/core/gallery/IMG_2289.png'
+      image: 'images/core/gallery/IMG_2289.png'
     },
     {
-      image: '../images/core/gallery/IMG_2291.png'
+      image: 'images/core/gallery/IMG_2291.png'
     }
   ];
 
