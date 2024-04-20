@@ -101,59 +101,361 @@
   });
 
   // custom
+  const imageDirectory = 'images/core/room';
 
   // popular room
   let popularRoomData = [
     {
       roomNumber: 1,
-      title: 'Deluxe Double Room With Balcony',
-      image: 'images/core/room/1/IMG_2250.png',
-      description: 'Room Size: 25 square meters'
+      title: 'Deluxe Double Room (+Balcony)',
+      description: 'Room Size: 25 square meters',
+      image: `${imageDirectory}/1/IMG_2250.png`,
+      isPopular: false,
+      images: [
+        {
+          fileName: `IMG_2197.png`
+        },
+        {
+          fileName: `IMG_2250.png`
+        },
+        {
+          fileName: `IMG_2359.png`
+        },
+        {
+          fileName: `IMG_3330.png`
+        },
+        {
+          fileName: `IMG_3332.png`
+        }
+      ],
+      facilities: [
+        {
+          name: 'Square Meters',
+          value: '25 meters'
+        },
+        {
+          name: 'Air Conditioner',
+          value: '1'
+        },
+        {
+          name: 'Hairdryer',
+          value: '1'
+        },
+        {
+          name: 'Cupboard',
+          value: '1'
+        },
+        {
+          name: '43” Television',
+          value: '1'
+        },
+        {
+          name: 'Working Desk',
+          value: '1'
+        },
+        {
+          name: 'Bathroom',
+          value: '1'
+        },
+        {
+          name: 'Private Balcony',
+          value: '1'
+        },
+        {
+          name: '180 x 200 Bed Size',
+          value: '1'
+        }
+      ]
     },
     {
       roomNumber: 2,
-      title: `Superior King`,
+      title: `Superior King (+Balcony)`,
+      description: 'Room Size: 25 square meters',
       image: 'images/core/room/2/IMG_2250.png',
-      description: 'Room Size: 25 square meters'
+      isPopular: true,
+      images: [
+        {
+          fileName: `IMG_2250.png`
+        },
+        {
+          fileName: `IMG_2255.png`
+        },
+        {
+          fileName: `IMG_2257.png`
+        },
+        {
+          fileName: `IMG_2359.png`
+        }
+      ],
+      facilities: [
+        {
+          name: 'Square Meters Room',
+          value: '25 Meters'
+        },
+        {
+          name: 'Air Conditioner',
+          value: '1'
+        },
+        {
+          name: 'Cupboard',
+          value: '1'
+        },
+        {
+          name: '43” Television',
+          value: '1'
+        },
+        {
+          name: 'Working Desk',
+          value: '1'
+        },
+        {
+          name: 'Hairdryer',
+          value: '1'
+        },
+        {
+          name: 'Bathroom',
+          value: '1'
+        },
+        {
+          name: 'Private Balcony',
+          value: '1'
+        },
+        {
+          name: '180 x 200 Bed Size',
+          value: '1'
+        }
+      ]
     },
     {
       roomNumber: 3,
-      title: 'Double room with balcony',
+      title: 'Double Room (+Balcony)',
+      description: 'Room Size: 20 square meters',
       image: 'images/core/room/3/IMG_2304.png',
-      description: 'Room Size: 20 square meters'
+      isPopular: false,
+      images: [
+        {
+          fileName: `IMG_2304.png`
+        },
+        {
+          fileName: `IMG_2307.png`
+        },
+        {
+          fileName: `IMG_2313.png`
+        },
+        {
+          fileName: `IMG_2314.png`
+        },
+        {
+          fileName: `IMG_2359.png`
+        }
+      ],
+      facilities: [
+        {
+          name: 'Square Meters',
+          value: '20 Meters'
+        },
+        {
+          name: 'Air Conditioner',
+          value: '1'
+        },
+        {
+          name: 'Cupboard',
+          value: '1'
+        },
+        {
+          name: 'Hairdryer',
+          value: '1'
+        },
+        {
+          name: '32” Television',
+          value: '1'
+        },
+        {
+          name: 'Working Desk',
+          value: '1'
+        },
+        {
+          name: 'Bathroom',
+          value: '1'
+        },
+        {
+          name: '180 x 200cm Bed Size',
+          value: '1'
+        }
+      ]
     },
     {
       roomNumber: 5,
       title: 'Superior Double Room',
+      description: 'Room Size: 20 square meters',
       image: 'images/core/room/5/IMG_2302.png',
-      description: 'Room Size: 20 square meters'
+      isPopular: false,
+      images: [
+        {
+          fileName: `IMG_2289.png`
+        },
+        {
+          fileName: `IMG_2291.png`
+        },
+        {
+          fileName: `IMG_2292.png`
+        },
+        {
+          fileName: `IMG_2302.png`
+        },
+        {
+          fileName: `IMG_2314.png`
+        }
+      ],
+      facilities: [
+        {
+          name: 'Square Meters',
+          value: '20 Meters'
+        },
+        {
+          name: 'Air Conditioner',
+          value: '1'
+        },
+        {
+          name: 'Cupboard',
+          value: '1'
+        },
+        {
+          name: 'Hairdryer',
+          value: '1'
+        },
+        {
+          name: '32” Television',
+          value: '1'
+        },
+        {
+          name: 'Bathroom',
+          value: '1'
+        },
+        {
+          name: '160 x 200 Bed Size',
+          value: '1'
+        }
+      ]
     },
     {
       roomNumber: 6,
       title: 'Small Double Room',
+      description: 'Room Size: 16 square meters',
       image: 'images/core/room/6/IMG_2337.png',
-      description: 'Room Size: 16 square meters'
+      isPopular: false,
+      images: [
+        {
+          fileName: `IMG_2292.png`
+        },
+        {
+          fileName: `IMG_2337.png`
+        },
+        {
+          fileName: `IMG_2343.png`
+        }
+      ],
+      facilities: [
+        {
+          name: 'Square Meters Room',
+          value: '16 Meters'
+        },
+        {
+          name: 'Air Conditioner',
+          value: '1'
+        },
+        {
+          name: 'Hairdryer',
+          value: '1'
+        },
+        {
+          name: 'Cupboard',
+          value: '1'
+        },
+        {
+          name: '32” Television',
+          value: '1'
+        },
+        {
+          name: 'Bathroom',
+          value: '1'
+        },
+        {
+          name: '180 x 200 Bed Size',
+          value: '1'
+        }
+      ]
     },
     {
       roomNumber: 7,
       title: 'Standard Queen Room',
+      description: 'Room Size: 20 square meters',
       image: 'images/core/room/7/IMG_2302.png',
-      description: 'Room Size: 20 square meters'
+      isPopular: false,
+      images: [
+        {
+          fileName: `IMG_2208.png`
+        },
+        {
+          fileName: `IMG_2289.png`
+        },
+        {
+          fileName: `IMG_2292.png`
+        },
+        {
+          fileName: `IMG_2302.png`
+        }
+      ],
+      facilities: [
+        {
+          name: 'Square Meters',
+          value: '20 Meters'
+        },
+        {
+          name: 'Air Conditioner',
+          value: '1'
+        },
+        {
+          name: 'Cupboard',
+          value: '1'
+        },
+        {
+          name: 'Hairdryer',
+          value: '1'
+        },
+        {
+          name: '32” Television',
+          value: '1'
+        },
+        {
+          name: 'Bathroom',
+          value: '1'
+        },
+        {
+          name: '160 x 200 Bed Size',
+          value: '1'
+        }
+      ]
     }
   ];
 
   for (let index = 0; index < popularRoomData.length; index++) {
-    $('#popular-room').append(`
-		<div class="col-lg-4 col-md-6 col-sm-6 col-6">
-			<div class="card border-0 rounded-0 p-0 mb-5 mb-lg-0 shadow-sm">
-				<img src=${popularRoomData[index].image} alt="" class="img-fluid">
+    const encodedString = encodeURIComponent(
+      JSON.stringify(popularRoomData[index])
+    );
 
-				<div class="card-body">
-					<a href="javascript:void(0)"><h5 class="font-secondary mb-0">${popularRoomData[index].title}</h5></a>
-					<p class=" mb-2">${popularRoomData[index].description}</p>
-				</div>
-			</div>
-		</div>
+    $('#popular-room').append(`
+      <div class="col-lg-4 col-md-6 col-sm-6 col-6" style="margin-top:10px">
+        <a href="room-detail.html?roomData=${encodedString}">
+          <div class="card border-0 rounded-0 p-0 mb-3 mb-lg-0 shadow-sm">
+            <img src=${popularRoomData[index].image} alt="" class="img-fluid">
+            <div class="card-body">
+              <h5 class="font-secondary mb-0">${popularRoomData[index].title}</h5>
+              <p style="margin-top:10px;line-height:20px">Click to open</p>
+            </div>
+          </div>
+          </a>
+        </div>
 		`);
   }
 
@@ -162,7 +464,7 @@
     {
       icon: 'icofont-wind',
       title: 'Air Conditioner',
-      description: '',
+      description: `An air conditioner is like a super-cool machine that blasts chilly air when it's too hot outside, making your room feel awesome.`,
       style: {
         fontSize: '70px'
       }
@@ -170,7 +472,7 @@
     {
       icon: 'icofont-monitor',
       title: '43” Television',
-      description: '',
+      description: `A TV is that big screen where you watch all your favorite shows and movies, like having a cinema right in your room.`,
       style: {
         fontSize: '65px'
       }
@@ -178,7 +480,7 @@
     {
       icon: 'icofont-energy-solar',
       title: 'Private Balcony',
-      description: '',
+      description: `Your private balcony is your own little outdoor spot connected to your room, perfect for chilling, enjoying the breeze, or just gazing at the stars.`,
       style: {
         fontSize: '65px'
       }
@@ -186,15 +488,15 @@
     {
       icon: 'icofont-architecture-alt',
       title: 'Working Desk',
-      description: '',
+      description: `Your working desk is like your personal command center for getting stuff done – whether it's homework, drawing, or playing games on your computer.`,
       style: {
         fontSize: '65px'
       }
     },
     {
       icon: 'icofont-bed',
-      title: '180x200 Bed Size',
-      description: '',
+      title: '180 x 200 Bed Size',
+      description: `Your bed is your cozy nest, where you snuggle up, close your eyes, and drift off to dreamland, surrounded by soft blankets and pillows.`,
       style: {
         fontSize: '65px'
       }
@@ -202,7 +504,7 @@
     {
       icon: 'icofont-refrigerator',
       title: 'Cupboard',
-      description: '',
+      description: `A cupboard is basically your secret storage space, where you stash all your clothes, toys, and random treasures to keep your room looking neat and tidy.`,
       style: {
         fontSize: '55px'
       }
@@ -211,16 +513,13 @@
 
   for (let index = 0; index < ourFacilitiesData.length; index++) {
     $('#our-facilities').append(`
-	<div class="col-lg-4 col-md-6 col-sm-6">
-	<div class="text-center px-4 py-5 hover-style-1"> 
-	  <i class="${ourFacilitiesData[index].icon} text-lg text-color" style="font-size:${ourFacilitiesData[index].style.fontSize}"></i>
-	  <h4 class="mt-3 mb-4 text-uppercase">${ourFacilitiesData[index].title}</h4>
-	  <p>
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et,
-		molestias.
-	  </p>
-	</div>
-  </div>
+    <div class="col-lg-4 col-md-6 col-sm-6">
+      <div class="text-center px-4 py-5 hover-style-1"> 
+        <i class="${ourFacilitiesData[index].icon} text-lg text-color" style="font-size:${ourFacilitiesData[index].style.fontSize}"></i>
+        <h4 class="mt-3 mb-4 text-uppercase">${ourFacilitiesData[index].title}</h4>
+        <p>${ourFacilitiesData[index].description}</p>
+      </div>
+    </div>
 		`);
   }
 
@@ -253,15 +552,53 @@
 
   for (let index = 0; index < ourGalleryData.length; index++) {
     $('#our-gallery').append(`
-	  <div class="col-lg-3 col-md-6 col-sm-6"> 
-		<a href="${ourGalleryData[index].image}" class="popup-gallery">
-			<img
-				src="${ourGalleryData[index].image}"
-				alt=""
-				class="img-fluid"
-			/>
-		</a>
-	</div>
+      <div class="col-lg-3 col-md-6 col-sm-6"> 
+        <a href="${ourGalleryData[index].image}" class="popup-gallery">
+          <img
+            src="${ourGalleryData[index].image}"
+            alt=""
+            class="img-fluid"
+          />
+        </a>
+      </div>
+	`);
+  }
+
+  for (let index = 0; index < popularRoomData.length; index++) {
+    $('#hotel-list').append(`
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card px-4 py-5 rounded-0 bg-4" style="background: url(${
+          popularRoomData[index].image
+        }) no-repeat;background-size: cover;">
+          <div class="position-relative">
+            <h4
+              class="card-title text-capitalize font-weight-normal font-secondary text-white"
+            >
+              ${
+                popularRoomData[index].isPopular
+                  ? `<span class="text-sm bg-primary text-white py-1 px-2 mr-2">
+              Popular
+            </span>`
+                  : ``
+              }
+              ${popularRoomData[index].title}
+            </h4>
+            <div class="card-body mt-2">
+              <ul class="list-unstyled lh-35 mb-4">
+                ${popularRoomData[index].facilities.map(
+                  item => `
+                            <li class="text-white" style="margin-bottom:-25px">
+                              <i class="ti-check mr-3 text-color"></i>
+                              ${item.name} (${item.value})
+                            </li>
+                          `
+                )} 
+              </ul>
+              <a target="_blank" href="https://api.whatsapp.com/send/?phone=6281281009907&type=phone_number" class="btn btn-main" style="margin-top:30px">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
 	`);
   }
 })(jQuery);
