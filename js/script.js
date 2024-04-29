@@ -497,7 +497,7 @@
         <a href="room-detail.html?roomData=${encodedString}">
           <div class="card border-0 rounded-0 p-0 mb-3 mb-lg-0 shadow-sm">
             <div class="square-img">
-            <img src=${popularRoomData[index].image} alt="" class="img-fluid">
+              <img src=${popularRoomData[index].image} alt="" class="img-fluid">
             </div>
             <div class="card-body">
               <h5 class="font-secondary mb-0">${popularRoomData[index].title}</h5>
@@ -506,8 +506,8 @@
               </p>
             </div>
           </div>
-          </a>
-        </div>
+        </a>
+      </div>
 		`);
   }
 
@@ -607,11 +607,11 @@
       <div class="col-lg-3 col-md-6 col-sm-6"> 
         <a href="${ourGalleryData[index].image}" class="popup-gallery">
           <div class="square-img">
-          <img
-            src="${ourGalleryData[index].image}"
-            alt=""
-            class="img-fluid"
-          />
+            <img
+              src="${ourGalleryData[index].image}"
+              alt=""
+              class="img-fluid"
+            />
           </div>
         </a>
       </div>
@@ -654,6 +654,159 @@
             </div>
           </div>
         </div>
+      </div>
+	`);
+  }
+
+  const popularDrinks = [
+    {
+      roomNumber: 1,
+      title: 'Deluxe Double Room (+Balcony)',
+      description: 'Room Size: 25 square meters',
+      image: `${imageDirectory}/1/IMG_3330.png`,
+      isPopular: true,
+      images: [
+        {
+          fileName: `IMG_2197.png`
+        },
+        {
+          fileName: `IMG_2250.png`
+        },
+        {
+          fileName: `IMG_2359.png`
+        },
+        {
+          fileName: `IMG_3330.png`
+        },
+        {
+          fileName: `IMG_3332.png`
+        }
+      ],
+      facilities: [
+        {
+          name: 'Room Size 25 Square meters',
+          value: ''
+        },
+        {
+          name: 'Air Conditioner',
+          value: ''
+        },
+        {
+          name: 'Hairdryer',
+          value: ''
+        },
+        {
+          name: 'Cupboard',
+          value: ''
+        },
+        {
+          name: '43” Television',
+          value: ''
+        },
+        {
+          name: 'Working Desk',
+          value: ''
+        },
+        {
+          name: 'Bathroom',
+          value: ''
+        },
+        {
+          name: 'Private Balcony',
+          value: ''
+        },
+        {
+          name: '180 x 200 Bed Size',
+          value: ''
+        },
+        {
+          name: 'Private Bathroom',
+          value: ''
+        },
+        {
+          name: 'Shampoo & Body Soap',
+          value: ''
+        }
+      ]
+    }
+  ];
+
+  for (let index = 0; index < popularDrinks.length; index++) {
+    $('#drink-list').append(`
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card px-4 py-5 rounded-0 bg-4" style="background: url(${
+          popularRoomData[index].image
+        }) no-repeat;background-size: cover;">
+          <div class="position-relative">
+            <h4
+              class="card-title text-capitalize font-weight-normal font-secondary text-white"
+            >
+              ${
+                popularRoomData[index].isPopular
+                  ? `<span class="text-sm bg-primary text-white py-1 px-2 mr-2">
+              Popular
+            </span>`
+                  : ``
+              }
+              ${popularRoomData[index].title}
+            </h4>
+            <div class="card-body mt-2">
+              <ul class="list-unstyled lh-35 mb-4">
+                ${popularRoomData[index].facilities.map(
+                  item => `
+                            <li class="text-white" style="margin-bottom:-25px">
+                              <i class="ti-check mr-3 text-color"></i>
+                              ${item.name} ${
+                    item.value ? `(${item.value})` : ''
+                  }
+                            </li>
+                          `
+                )} 
+              </ul>
+              <a target="_blank" href="https://api.whatsapp.com/send/?phone=6281281009907&type=phone_number" class="btn btn-main" style="margin-top:30px">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+	`);
+  }
+
+  let drinksGalleryData = [
+    {
+      image: 'images/core/drinks/DSC06305.jpeg'
+    },
+    {
+      image: 'images/core/drinks/IMG_5869.jpg'
+    },
+    {
+      image: 'images/core/drinks/IMG_5877.jpg'
+    },
+    {
+      image: 'images/core/drinks/IMG_5883.jpg'
+    },
+    {
+      image: 'images/core/drinks/IMG_5884.jpg'
+    },
+    {
+      image: 'images/core/drinks/IMG_5890.jpg'
+    },
+    {
+      image: 'images/core/drinks/IMG_5891.jpg'
+    }
+  ];
+
+  for (let index = 0; index < drinksGalleryData.length; index++) {
+    $('#drinks-gallery').append(`
+      <div class="col-lg-3 col-md-6 col-sm-6"> 
+        <a href="${drinksGalleryData[index].image}" class="popup-gallery">
+          <div class="square-img">
+            <img
+              src="${drinksGalleryData[index].image}"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+        </a>
       </div>
 	`);
   }
