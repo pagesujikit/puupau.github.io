@@ -15,7 +15,7 @@
 
     <meta name="author" content="puupau.com" />
 
-    <title>Pu'u Pao | Hostel and Coffee Shop</title>
+    <title>Pu'u Pao | Hotel and Coffee Shop</title>
 
     <!-- bootstrap.min css -->
     <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css" />
@@ -463,11 +463,11 @@
 
       for (let index = 0; index < obj.facilities.length; index++) {
         $('#facilitiesData').append(`
-			<li class="list-group-item d-flex justify-content-between align-items-center text-black">
-				${obj.facilities[index].name}
-				<span class="text-black-50">${obj.facilities[index].value}</span>
-			</li>
-		`);
+          <li class="list-group-item d-flex justify-content-between align-items-center text-black">
+            ${obj.facilities[index].name}
+            <p class="text-color text-checklist">✓</p>
+          </li>
+       `);
       }
 
       const imageDirectory = 'images/core/room';

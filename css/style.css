@@ -420,7 +420,7 @@ ul.dropdown-menu li {
 }
 
 .slider {
-  background: url('../images/core/room/3/IMG_2307.png') no-repeat 0% 30%;
+  background: url('../images/core/main_building.jpg') no-repeat 0% 30%;
   background-size: cover;
   padding: 180px 0px;
 }
@@ -437,7 +437,7 @@ ul.dropdown-menu li {
 }
 
 .bg-2 {
-  background: url('../images/bg/bg-image-2-1.jpg') no-repeat;
+  background: url('../images/core/room/1/IMG_3332_background.png') no-repeat;
   background-size: cover;
 }
 
@@ -891,6 +891,12 @@ ul.dropdown-menu li {
   overflow: hidden;
   position: relative;
 }
+
+.text-checklist {
+  padding-top: 16px;
+  font-size: 20px;
+}
+
 .square-img img {
   position: absolute;
   top: 0;

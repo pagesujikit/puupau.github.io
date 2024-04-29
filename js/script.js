@@ -109,8 +109,8 @@
       roomNumber: 1,
       title: 'Deluxe Double Room (+Balcony)',
       description: 'Room Size: 25 square meters',
-      image: `${imageDirectory}/1/IMG_2250.png`,
-      isPopular: false,
+      image: `${imageDirectory}/1/IMG_3330.png`,
+      isPopular: true,
       images: [
         {
           fileName: `IMG_2197.png`
@@ -130,49 +130,57 @@
       ],
       facilities: [
         {
-          name: 'Square Meters',
-          value: '25 meters'
+          name: 'Room Size 25 Square meters',
+          value: ''
         },
         {
           name: 'Air Conditioner',
-          value: '1'
+          value: ''
         },
         {
           name: 'Hairdryer',
-          value: '1'
+          value: ''
         },
         {
           name: 'Cupboard',
-          value: '1'
+          value: ''
         },
         {
           name: '43” Television',
-          value: '1'
+          value: ''
         },
         {
           name: 'Working Desk',
-          value: '1'
+          value: ''
         },
         {
           name: 'Bathroom',
-          value: '1'
+          value: ''
         },
         {
           name: 'Private Balcony',
-          value: '1'
+          value: ''
         },
         {
           name: '180 x 200 Bed Size',
-          value: '1'
+          value: ''
+        },
+        {
+          name: 'Private Bathroom',
+          value: ''
+        },
+        {
+          name: 'Shampoo & Body Soap',
+          value: ''
         }
       ]
     },
     {
       roomNumber: 2,
-      title: `Superior King (+Balcony)`,
+      title: `Superior King`,
       description: 'Room Size: 25 square meters',
-      image: 'images/core/room/2/IMG_2250.png',
-      isPopular: true,
+      image: 'images/core/room/2/IMG_2255.png',
+      isPopular: false,
       images: [
         {
           fileName: `IMG_2250.png`
@@ -189,40 +197,48 @@
       ],
       facilities: [
         {
-          name: 'Square Meters Room',
-          value: '25 Meters'
+          name: 'Room Size 25 Square meters',
+          value: ''
         },
         {
           name: 'Air Conditioner',
-          value: '1'
+          value: ''
         },
         {
           name: 'Cupboard',
-          value: '1'
+          value: ''
         },
         {
           name: '43” Television',
-          value: '1'
+          value: ''
         },
         {
           name: 'Working Desk',
-          value: '1'
+          value: ''
         },
         {
           name: 'Hairdryer',
-          value: '1'
+          value: ''
         },
         {
           name: 'Bathroom',
-          value: '1'
+          value: ''
         },
-        {
-          name: 'Private Balcony',
-          value: '1'
-        },
+        // {
+        //   name: 'Private Balcony',
+        //   value: ''
+        // },
         {
           name: '180 x 200 Bed Size',
-          value: '1'
+          value: ''
+        },
+        {
+          name: 'Private Bathroom',
+          value: ''
+        },
+        {
+          name: 'Shampoo & Body Soap',
+          value: ''
         }
       ]
     },
@@ -251,36 +267,44 @@
       ],
       facilities: [
         {
-          name: 'Square Meters',
-          value: '20 Meters'
+          name: 'Room Size 20 Square meters',
+          value: ''
         },
         {
           name: 'Air Conditioner',
-          value: '1'
+          value: ''
         },
         {
           name: 'Cupboard',
-          value: '1'
+          value: ''
         },
         {
           name: 'Hairdryer',
-          value: '1'
+          value: ''
         },
         {
           name: '32” Television',
-          value: '1'
+          value: ''
         },
         {
           name: 'Working Desk',
-          value: '1'
+          value: ''
         },
         {
           name: 'Bathroom',
-          value: '1'
+          value: ''
         },
         {
           name: '180 x 200cm Bed Size',
-          value: '1'
+          value: ''
+        },
+        {
+          name: 'Private Bathroom',
+          value: ''
+        },
+        {
+          name: 'Shampoo & Body Soap',
+          value: ''
         }
       ]
     },
@@ -309,32 +333,40 @@
       ],
       facilities: [
         {
-          name: 'Square Meters',
-          value: '20 Meters'
+          name: 'Room Size 20 Square meters',
+          value: ''
         },
         {
           name: 'Air Conditioner',
-          value: '1'
+          value: ''
         },
         {
           name: 'Cupboard',
-          value: '1'
+          value: ''
         },
         {
           name: 'Hairdryer',
-          value: '1'
+          value: ''
         },
         {
           name: '32” Television',
-          value: '1'
+          value: ''
         },
         {
           name: 'Bathroom',
-          value: '1'
+          value: ''
         },
         {
           name: '160 x 200 Bed Size',
-          value: '1'
+          value: ''
+        },
+        {
+          name: 'Private Bathroom',
+          value: ''
+        },
+        {
+          name: 'Shampoo & Body Soap',
+          value: ''
         }
       ]
     },
@@ -357,32 +389,40 @@
       ],
       facilities: [
         {
-          name: 'Square Meters Room',
-          value: '16 Meters'
+          name: 'Room Size 16 Square meters',
+          value: ''
         },
         {
           name: 'Air Conditioner',
-          value: '1'
+          value: ''
         },
         {
           name: 'Hairdryer',
-          value: '1'
+          value: ''
         },
         {
           name: 'Cupboard',
-          value: '1'
+          value: ''
         },
         {
           name: '32” Television',
-          value: '1'
+          value: ''
         },
         {
           name: 'Bathroom',
-          value: '1'
+          value: ''
         },
         {
           name: '180 x 200 Bed Size',
-          value: '1'
+          value: ''
+        },
+        {
+          name: 'Private Bathroom',
+          value: ''
+        },
+        {
+          name: 'Shampoo & Body Soap',
+          value: ''
         }
       ]
     },
@@ -408,32 +448,40 @@
       ],
       facilities: [
         {
-          name: 'Square Meters',
-          value: '20 Meters'
+          name: 'Room Size 20 Square meters',
+          value: ''
         },
         {
           name: 'Air Conditioner',
-          value: '1'
+          value: ''
         },
         {
           name: 'Cupboard',
-          value: '1'
+          value: ''
         },
         {
           name: 'Hairdryer',
-          value: '1'
+          value: ''
         },
         {
           name: '32” Television',
-          value: '1'
+          value: ''
         },
         {
           name: 'Bathroom',
-          value: '1'
+          value: ''
         },
         {
           name: '160 x 200 Bed Size',
-          value: '1'
+          value: ''
+        },
+        {
+          name: 'Private Bathroom',
+          value: ''
+        },
+        {
+          name: 'Shampoo & Body Soap',
+          value: ''
         }
       ]
     }
@@ -448,10 +496,14 @@
       <div class="col-lg-4 col-md-6 col-sm-6 col-6" style="margin-top:10px">
         <a href="room-detail.html?roomData=${encodedString}">
           <div class="card border-0 rounded-0 p-0 mb-3 mb-lg-0 shadow-sm">
+            <div class="square-img">
             <img src=${popularRoomData[index].image} alt="" class="img-fluid">
+            </div>
             <div class="card-body">
               <h5 class="font-secondary mb-0">${popularRoomData[index].title}</h5>
-              <p style="margin-top:10px;line-height:20px">Click to open</p>
+              <p style="margin-top:10px;line-height:20px">
+                Click to open
+              </p>
             </div>
           </div>
           </a>
@@ -525,28 +577,28 @@
 
   let ourGalleryData = [
     {
-      image: 'images/core/gallery/IMG_3330.png'
+      image: 'images/core/room/1/IMG_3330.png'
     },
     {
-      image: 'images/core/gallery/IMG_2197.png'
+      image: 'images/core/room/1/IMG_2197.png'
     },
     {
-      image: 'images/core/gallery/IMG_2359.png'
+      image: 'images/core/room/1/IMG_2359.png'
     },
     {
-      image: 'images/core/gallery/IMG_2257.png'
+      image: 'images/core/room/2/IMG_2257.png'
     },
     {
-      image: 'images/core/gallery/IMG_2307.png'
+      image: 'images/core/room/3/IMG_2307.png'
     },
     {
-      image: 'images/core/gallery/IMG_2314.png'
+      image: 'images/core/room/3/IMG_2314.png'
     },
     {
-      image: 'images/core/gallery/IMG_2289.png'
+      image: 'images/core/room/5/IMG_2289.png'
     },
     {
-      image: 'images/core/gallery/IMG_2291.png'
+      image: 'images/core/room/5/IMG_2291.png'
     }
   ];
 
@@ -554,11 +606,13 @@
     $('#our-gallery').append(`
       <div class="col-lg-3 col-md-6 col-sm-6"> 
         <a href="${ourGalleryData[index].image}" class="popup-gallery">
+          <div class="square-img">
           <img
             src="${ourGalleryData[index].image}"
             alt=""
             class="img-fluid"
           />
+          </div>
         </a>
       </div>
 	`);
@@ -589,7 +643,9 @@
                   item => `
                             <li class="text-white" style="margin-bottom:-25px">
                               <i class="ti-check mr-3 text-color"></i>
-                              ${item.name} (${item.value})
+                              ${item.name} ${
+                    item.value ? `(${item.value})` : ''
+                  }
                             </li>
                           `
                 )} 
