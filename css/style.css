@@ -451,6 +451,11 @@ ul.dropdown-menu li {
   background-size: cover;
 }
 
+.bg-5 {
+  background: url('../images/core/drinks/DSC06305.jpeg') no-repeat;
+  background-size: cover;
+}
+
 .mt-80px {
   margin-top: -80px;
 }
@@ -913,4 +918,8 @@ ul.dropdown-menu li {
 .padding-horizontal-55 {
   padding-top: 55px;
   padding-bottom: 55px;
+}
+
+.background-grey {
+  background-color: rgba(0, 0, 0, 0.08);
 }
