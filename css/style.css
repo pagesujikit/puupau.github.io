@@ -1,5 +1,6 @@
 /*=== MEDIA QUERY ===*/
 @import url('https://fonts.googleapis.com/css?family=Barlow+Condensed:400,500,600,700|Montserrat|Poppins:400,500,600,700');
+
 body {
   line-height: 1.8;
   font-family: 'Montserrat', sans-serif;
@@ -866,6 +867,9 @@ ul.dropdown-menu li {
   font-size: 32px;
   margin-left: 15px;
   margin-top: 7px;
+  font-family: 'Fondamento', cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 .img-header {
   width: 60px;
