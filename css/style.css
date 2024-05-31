@@ -927,3 +927,8 @@ ul.dropdown-menu li {
 .background-grey {
   background-color: rgba(0, 0, 0, 0.08);
 }
+
+iframe {
+  width: 100%;
+  border: none;
+}

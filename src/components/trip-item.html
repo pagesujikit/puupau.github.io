@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <!-- bootstrap.min css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div id="trips-data" class="row"></div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const tripsData = [
+        {
+          image: '../../images/core/tour/posters/sharing_trip1.jpg',
+          title: 'ONE DAY SHARING TRIP',
+          description: `Embark on an unforgettable one-day adventure through Nusa Tenggara Timur (NTT), a province in eastern Indonesia known for its stunning landscapes, rich culture, and friendly locals.`,
+          button: {
+            title: 'See more',
+            cssClass: 'primary'
+          },
+          packages: {
+            destination: [
+              'Padar Island (Hiking)',
+              'Taka Makassar (Trekking)',
+              'Pink Beach (Snorkling or Swimming)',
+              'Manta Point (Snorkling or Swimming)',
+              'Kanawa Island (Snorkling)',
+              'Komodo Island (Snorkling or Relaxing)'
+            ],
+            includes: [
+              'Lunch (chicken/ fish/ vegetarian)',
+              'Drinks (mineral water & soft-drink)',
+              'Snack',
+              'Fruit (depend on the season)',
+              'Snorkling Gears',
+              'Transportation (pickup & drop off - hotel)',
+              'life Jacket',
+              'Guide'
+            ],
+            excludes: ['Entrance fee to komodo national park']
+          }
+        },
+        {
+          image: '../../images/core/tour/posters/sunset_trip1.jpg',
+          title: 'SUNSET TRIP',
+          description: `A trip to the Indonesian Komodo Island offers an adventurous and unique experience that allows travelers to explore one of the most fascinating and biodiverse regions in the world.`,
+          button: {
+            title: 'See more',
+            cssClass: 'warning'
+          },
+          packages: {
+            destination: [
+              'Kelor Island (swimming & short hikkinng)',
+              'manjarite Island (snorkling & taking photo)',
+              'rinca Island (seeing komodo dragon & short walk)',
+              'kalong Island (sunset moment & bats experience)'
+            ],
+            includes: [
+              'Lunch (chicken/ fish/ vegetarian)',
+              'Drinks (mineral water & soft-drink)',
+              'Snack',
+              'Fruit (depend on the season)',
+              'Snorkling Gears',
+              'Transportation (pickup & drop off - hotel)',
+              'Life Jacket',
+              'Guide'
+            ],
+            excludes: [
+              'Entrance fee to komodo national park (please note they only accept cash)'
+            ]
+          }
+        }
+      ];
+
+      for (let index = 0; index < tripsData.length; index++) {
+        const item = tripsData[index];
+        const encodedString = encodeURIComponent(
+          JSON.stringify(tripsData[index])
+        );
+
+        $('#trips-data').append(`        <div class="col-6 col-lg-6">
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="${item.image}"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">${item.title}</h5>
+                  <p class="card-text">
+                    ${item.description}
+                  </p>
+                  <a
+                    target="_blank"
+                    href="../../tour-detail.html?tripData=${encodedString}"
+                    type="button"
+                    class="btn btn-outline-${item.button.cssClass}"
+                  >
+                  ${item.button.title}
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+`);
+      }
+    </script>
+  </body>
+</html>
