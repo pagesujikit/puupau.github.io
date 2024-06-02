@@ -42,17 +42,28 @@
         id="background-image-jumbotron"
         class="p-5 mb-4 bg-body-tertiary rounded-3 custom-jumbotron"
       >
-        <div class="container-fluid py-5">
-          <h1 id="trip-title" class="display-5 fw-bold"></h1>
-          <p id="trip-description" class="col-md-8 fs-4"></p>
-          <a
-            id="button-contactus"
-            target="_blank"
-            href="https://api.whatsapp.com/send/?phone=6281281009907&type=phone_number"
-            type="button"
-          >
-            Hubungi kami
-          </a>
+        <div class="row">
+          <div class="container-fluid py-5 col-8 col-lg-7">
+            <h1 id="trip-title" class="display-5 fw-bold"></h1>
+            <p id="trip-description" class="col-md-8 fs-4"></p>
+            <a
+              id="button-contactus"
+              target="_blank"
+              href="https://api.whatsapp.com/send/?phone=6281281009907&type=phone_number"
+              type="button"
+            >
+              Hubungi kami
+            </a>
+          </div>
+          <div class="container py-5 col-4 col-lg-5" style="z-index: 1000">
+            <a target="_blank" id="button-image-poster">
+              <img
+                id="image-poster"
+                class="img-fluid rounded-start"
+                alt="..."
+              />
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -83,6 +94,8 @@
 
       $('#trip-title').text(title);
       $('#trip-description').text(description);
+      $('#button-image-poster').attr('href', `${image}`);
+      $('#image-poster').attr('src', `${image}`);
       $('#background-image-jumbotron').css('background-image', `url(${image})`);
       $('#button-contactus').addClass(`btn btn-${button.cssClass} btn-lg`);
     </script>
