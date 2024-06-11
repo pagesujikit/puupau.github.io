@@ -771,6 +771,41 @@
 	`);
   }
 
+  let foodAndBeverageGalleryGalleryData = [
+    {
+      image: 'images/core/food-and-beverage/1.png'
+    },
+    {
+      image: 'images/core/food-and-beverage/2.png'
+    },
+    {
+      image: 'images/core/food-and-beverage/3.png'
+    },
+    {
+      image: 'images/core/food-and-beverage/4.png'
+    }
+  ];
+
+  for (
+    let index = 0;
+    index < foodAndBeverageGalleryGalleryData.length;
+    index++
+  ) {
+    $('#food-and-beverage-gallery').append(`
+      <div class="col-lg-3 col-md-6 col-sm-6" style="padding: 10px"> 
+        <a target="_blank" href="${foodAndBeverageGalleryGalleryData[index].image}">
+          <div>
+            <img
+              src="${foodAndBeverageGalleryGalleryData[index].image}"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+        </a>
+      </div>
+	`);
+  }
+
   let drinksGalleryData = [
     {
       image: 'images/core/drinks/DSC06305.jpeg'
