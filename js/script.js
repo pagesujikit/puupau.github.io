@@ -113,19 +113,20 @@
       isPopular: true,
       images: [
         {
-          fileName: `IMG_2197.png`
-        },
-        {
           fileName: `IMG_2250.png`
-        },
-        {
-          fileName: `IMG_2359.png`
         },
         {
           fileName: `IMG_3330.png`
         },
         {
           fileName: `IMG_3332.png`
+        },
+        {
+          fileName: `IMG_2197.png`
+        },
+
+        {
+          fileName: `IMG_2359.png`
         }
       ],
       facilities: [
@@ -322,13 +323,13 @@
           fileName: `IMG_2291.png`
         },
         {
-          fileName: `IMG_2292.png`
-        },
-        {
           fileName: `IMG_2302.png`
         },
         {
           fileName: `IMG_2314.png`
+        },
+        {
+          fileName: `IMG_2292.png`
         }
       ],
       facilities: [
@@ -378,13 +379,13 @@
       isPopular: false,
       images: [
         {
-          fileName: `IMG_2292.png`
-        },
-        {
           fileName: `IMG_2337.png`
         },
         {
           fileName: `IMG_2343.png`
+        },
+        {
+          fileName: `IMG_2292.png`
         }
       ],
       facilities: [
@@ -440,10 +441,10 @@
           fileName: `IMG_2289.png`
         },
         {
-          fileName: `IMG_2292.png`
+          fileName: `IMG_2302.png`
         },
         {
-          fileName: `IMG_2302.png`
+          fileName: `IMG_2292.png`
         }
       ],
       facilities: [
