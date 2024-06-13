@@ -12,7 +12,10 @@
   </head>
   <body>
     <div class="container">
-      <div id="trips-data" class="row"></div>
+      <div
+        id="trips-data"
+        class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"
+      ></div>
     </div>
 
     <script
@@ -95,36 +98,32 @@
           JSON.stringify(tripsData[index])
         );
 
-        $('#trips-data').append(`        <div class="col-6 col-lg-6">
-          <div class="card mb-3">
-            <div class="row g-0">
-              <div class="col-md-4">
+        $('#trips-data').append(`
+          <div class="col">
+            <div class="card shadow-sm">
+              <a style="text-decoration: none; color: grey" target="_blank" href="../../tour-detail.html?tripData=${encodedString}">
                 <img
                   src="${item.image}"
-                  class="img-fluid rounded-start"
-                  alt="..."
+                  class="img-fluid bd-placeholder-img card-img-top"
+                  alt="${item.image}"
+                  style="height:240px;object-fit:cover"
                 />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">${item.title}</h5>
-                  <p class="card-text">
-                    ${item.description}
+              </a>
+              <div class="card-body">
+                <a style="text-decoration: none; color: grey" target="_blank" href="../../tour-detail.html?tripData=${encodedString}">
+                  <p class="card-text bold text-muted">
+                    <strong>
+                      ${item.title}
+                    </strong>
                   </p>
-                  <a
-                    target="_blank"
-                    href="../../tour-detail.html?tripData=${encodedString}"
-                    type="button"
-                    class="btn btn-outline-${item.button.cssClass}"
-                  >
-                  ${item.button.title}
-                  </a>
-                </div>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <button type="button" class="btn btn-outline-${item.button.cssClass} btn-block">${item.button.title}</button>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
-        </div>
-`);
+        `);
       }
     </script>
   </body>
